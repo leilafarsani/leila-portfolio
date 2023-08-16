@@ -10,7 +10,8 @@ const card = [
     ImgTitle: "html logo",
     name: "HTML",
     description: "",
-    onClick: "",
+    onClick: "https://www.w3schools.com/html/default.asp",
+
   },
   {
     image: "/css.jpg",
@@ -103,22 +104,29 @@ const card = [
     name: "AWS",
     description: "",
     onClick: "",
-  }
+  },
 ];
 
 export default function SkillsPage() {
   const router = useRouter();
 
+  const handleSkillClick = (link: string | undefined) => {
+    if (link) {
+      window.open(link, "_blank");
+    }
+  };
+
   return (
     <div>
-      <div className="flex gap-3 justify-center py-12 flex-wrap cursor-default">
+      <div className="flex gap-3 justify-center py-12 flex-wrap cursor-pointer">
         {card.map((item) => (
           <SkillsCard
+            key={item.name}
             image={item.image}
             ImgTitle={item.ImgTitle}
             name={item.name}
             description={item.description}
-            onClick={() => router.push(item.onClick)}
+            onClick={() => handleSkillClick(item.onClick)}
           />
         ))}
       </div>

@@ -1,17 +1,11 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import React from "react";
 
 interface CardProps {
   image: string;
   ImgTitle: string;
   name: string;
   description: string;
-  onClick: () => any;
+  onClick: () => void;
 }
 
 export default function SkillsCard({
@@ -22,24 +16,32 @@ export default function SkillsCard({
   onClick,
 }: CardProps) {
   return (
-    <Card sx={{ maxWidth: 345 }} className="">
-      <CardMedia sx={{ height: 140 }} image={image} title={ImgTitle} />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-200">
+      <img
+        className="h-48 w-full object-cover rounded-t-xl"
+        src={image}
+        alt={ImgTitle}
+      />
+      <div className="p-4">
+        <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
           {name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button onClick={onClick} size="small">
-          Share
-        </Button>
-        <Button onClick={onClick} size="small">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+        </div>
+        <p className="mt-2 text-gray-700">{description}</p>
+      </div>
+      <div className="p-4 flex justify-center space-x-2 opacity-100 group-hover:opacity-100 transition duration-200">
+        <button
+          onClick={onClick}
+          className="text-sm px-4 py-2 bg-black text-white rounded-md hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900"
+        >
+         Learn More
+        </button>
+        {/* <button
+          onClick={onClick}
+          className="text-sm px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+        >
+     Share
+        </button> */}
+      </div>
+    </div>
   );
 }

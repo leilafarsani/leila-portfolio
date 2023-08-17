@@ -11,7 +11,7 @@ export default function Links({ path, name, last }: LinkProps) {
   return (
     <Link
       href={path}
-      className={`pseudo cursor-pointer pb-4 min-h-[100%] w-full justify-center flex relative items-end hover:text-pink-400 ${
+      className={`pseudo cursor-pointer pb-4 min-h-[100%] w-full justify-center flex relative items-end text-gray-500 hover:text-pink-400 ${
         last ? " before:w-0 before:hidden" : ""
       }`}
     >

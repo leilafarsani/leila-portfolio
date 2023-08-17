@@ -4,7 +4,7 @@ import { FaDownload } from "react-icons/fa";
 
 export default function AboutPage() {
   return (
-    <div className="bg-gray-100 text-gray-800 min-h-screen py-16">
+    <div className=" min-h-screen py-16">
       <div className="container mx-auto text-center">
         <h1 className="text-3xl md:text-6xl font-bold mb-4">About Me</h1>
         <p className="text-l mb-12">
@@ -39,7 +39,7 @@ export default function AboutPage() {
 
         <Link
           href="https://drive.google.com/file/d/1ezLWOoP32tMzuJ2Y1iOGiw6tMin_yyVU/view"
-          className="bg-grey-900 text-black px-6 py-3 rounded-md hover:bg-grey-700 transition duration-300 inline-flex items-center"
+          className=" px-6 py-3 rounded-md hover:bg-grey-700 transition duration-300 inline-flex items-center bg-gray-200 text-gray-600 font-semibold"
           target="_blank"
         >
           Download CV <FaDownload className="ml-3" />
@@ -56,12 +56,12 @@ interface SectionCardProps {
 
 function SectionCard({ title, content }: SectionCardProps) {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 md:w-1/2 mx-auto transform transition-transform hover:scale-105">
+    <div className=" shadow-md bg-gray-200 rounded-lg p-6 md:w-1/2 mx-auto transform transition-transform hover:scale-105">
       <div className="mb-4">
-        <h2 className="text-lg font-semibold">{title}</h2>
+        <h2 className="text-lg font-semibold  text-gray-600">{title}</h2>
       </div>
       <div>
-        <ul className="list-disc list-inside text-sm">
+        <ul className="list-disc list-inside text-sm  text-gray-800">
           {content.split("\n").map((item, index) => (
             <li key={index} className="mb-2">
               {item}

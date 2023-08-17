@@ -1,21 +1,25 @@
-"use client";
-
+"use client"
+import React, { useState } from "react";
 import Link from "next/link";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "../buttons/Button";
-import {useState } from "react";
 import DropMenu from "./DropMenu";
 import { GrFormClose } from "react-icons/gr";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
+
+
 
 export default function Navbar() {
   const [drop, setDrop] = useState(false);
   const router = useRouter();
 
   return (
-    <header>
+    <header
+      className="sticky top-0 z-30 w-full border-b"
+    >
       <div className="flex items-center justify-between px-6 py-6 cursor-default">
         <Link className="uppercase text-[1.5rem] z-50 ml-4" href="/">
           Leila <span className="text-gray-400">Portfolio</span>
@@ -27,7 +31,7 @@ export default function Navbar() {
             label="Contact"
             onClick={() => router.push("/contact")}
           />
-
+          <ThemeToggle />
           <div className="rounded-full bg-gray-300 p-2 z-[999999]">
             {drop ? (
               <GrFormClose

@@ -17,13 +17,15 @@ export default function SkillsCard({
 }: CardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden transform hover:scale-105 transition duration-200">
-      <img
-        className="h-48 w-full object-cover rounded-t-xl"
-        src={image}
-        alt={ImgTitle}
-      />
+      <div className="h-48 overflow-hidden">
+        <img
+          className="h-full w-full object-cover rounded-t-xl"
+          src={image}
+          alt={ImgTitle}
+        />
+      </div>
       <div className="p-4">
-        <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+        <div className="uppercase tracking-wide text-sm text-pink-500 font-semibold">
           {name}
         </div>
         <p className="mt-2 text-gray-700">{description}</p>
@@ -36,7 +38,7 @@ export default function SkillsCard({
          Learn More
         </button>
         {/* <button
-          onClick={onClick}
+          onClick={}
           className="text-sm px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
         >
      Share

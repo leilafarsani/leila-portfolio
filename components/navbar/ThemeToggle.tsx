@@ -17,7 +17,7 @@ const ThemeToggle = () => {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
   <CssBaseline/>
-      <div className="rounded-full bg-gray-300 p-2 z-[999999]">
+      <div className="rounded-full bg-gray-300 p-2 ">
         {isDarkMode ? (
           <FiSun
             className="text-[1.5rem] cursor-pointer"

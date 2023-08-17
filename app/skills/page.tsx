@@ -118,7 +118,8 @@ export default function SkillsPage() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <h1 className="text-2xl md:text-6xl text-center font-bold mb-20">My Skills</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
         {card.map((item) => (
           <SkillsCard
             key={item.name}

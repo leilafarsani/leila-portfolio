@@ -59,21 +59,19 @@ export default function ProjectPage() {
   );
 
   return (
-    <div className="bg-gray-100 text-gray-800 min-h-screen py-16">
-      <h1 className="text-4xl md:text-6xl font-bold mb-8 text-gray-800 text-center">
+    <div className="min-h-screen py-16">
+      <h1 className="text-4xl md:text-6xl font-bold mb-8 text-center">
         My Projects
       </h1>
       <div className="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h2 className="text-2xl md:text-5xl font-bold mb-8 text-gray-800">
-            Solo
-          </h2>
+          <h2 className="text-2xl md:text-5xl font-bold mb-8">Solo</h2>
           {soloProjects.map((project, index) => (
             <Card
               key={index}
-              className="bg-gray-800 text-white transform transition-transform hover:scale-105 mb-3"
+              className="transform transition-transform hover:scale-105 mb-3"
             >
-              <CardContent>
+              <CardContent className="bg-gray-200">
                 <Typography variant="h6" component="div" className="mb-2">
                   {project.title}
                 </Typography>
@@ -87,6 +85,7 @@ export default function ProjectPage() {
                   href={project.liveDemoLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ color: "#FF6EB4", fontWeight: "600" }}
                 >
                   Live Demo
                 </Button>
@@ -95,6 +94,7 @@ export default function ProjectPage() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ color: "#FF6EB4", fontWeight: "600" }}
                 >
                   GitHub Repo
                 </Button>
@@ -104,15 +104,13 @@ export default function ProjectPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl md:text-5xl font-bold mb-8 text-gray-800">
-            Team
-          </h2>
+          <h2 className="text-2xl md:text-5xl font-bold mb-8">Team</h2>
           {teamProjects.map((project, index) => (
             <Card
               key={index}
               className="bg-gray-800 text-white transform transition-transform hover:scale-105 mb-3"
             >
-              <CardContent>
+              <CardContent className="bg-gray-200">
                 <Typography variant="h6" component="div" className="mb-2">
                   {project.title}
                 </Typography>
@@ -126,6 +124,7 @@ export default function ProjectPage() {
                   href={project.liveDemoLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ color: "#FF6EB4", fontWeight: "600" }}
                 >
                   Live Demo
                 </Button>
@@ -134,6 +133,7 @@ export default function ProjectPage() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ color: "#FF6EB4", fontWeight: "600" }}
                 >
                   GitHub Repo
                 </Button>

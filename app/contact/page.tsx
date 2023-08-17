@@ -8,8 +8,8 @@ import {
 
 export default function ContactPage() {
   return (
-    <div className="bg-gray-900 h-screen flex items-center justify-center">
-      <div className="text-white text-center p-10">
+    <div className=" h-screen flex items-center justify-center">
+      <div className="text-center p-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">Let's Connect!</h1>
         <p className="text-lg md:text-xl mb-8 text-gray-400">
           Feel free to reach out for any inquiries or collaboration
@@ -19,14 +19,14 @@ export default function ContactPage() {
           <FaEnvelope className="inline text-xl mr-2" />
           <Link
             href="mailto:leilafarsani@gmail.com"
-            className="hover:text-blue-500"
+            className="hover:text-pink-500"
           >
             leilafarsani@gmail.com
           </Link>
         </p>
         <p className="text-xl mb-6">
           <FaPhoneAlt className="inline text-xl mr-2" />
-          <Link href="tel:+1234567890" className="hover:text-blue-500">
+          <Link href="tel:+1234567890" className="hover:text-pink-500">
             +44 7465872787
           </Link>
         </p>

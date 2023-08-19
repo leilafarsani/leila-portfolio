@@ -86,7 +86,7 @@ export default function Hero() {
       <div className="flex flex-col justify-center items-center md:w-1/2">
         <div className="md:w-[500px] w-full mb-4 md:ml-12">
           <Image
-            src=""
+            src="/leila.jpg"
             width={300}
             height={300}
             alt="Leila image"

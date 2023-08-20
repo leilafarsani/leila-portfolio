@@ -8,17 +8,17 @@ import {
 
 const projects = [
   {
-    title: "Project1",
+    title: "Full-Stack Project Assessment",
     category: "Solo",
     liveDemoLink: "",
-    githubLink: "",
+    githubLink: "https://github.com/leilafarsani/Full-Stack-Project-Assessment",
     techStack: [""],
   },
   {
-    title: "Project 2",
+    title: "Careless Whisper",
     category: "Team",
-    liveDemoLink: "",
-    githubLink: "",
+    liveDemoLink: "https://careless-whisper.vercel.app/",
+    githubLink: "https://github.com/susanssky/careless-whisper",
     techStack: [""],
   },
   {

@@ -96,7 +96,7 @@ export default function Hero() {
         <p
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className="text-center md:text-left"
+          className="text-center md:text-left mr-5"
         >
           Passionate Full Stack web developer with a Ph.D. in Mathematics,
           merging analytical thinking and creative problem-solving to craft

@@ -21,34 +21,34 @@ const projects = [
     githubLink: "https://github.com/susanssky/careless-whisper",
     techStack: [""],
   },
-  {
-    title: "Project 3",
-    category: "Solo",
-    liveDemoLink: "",
-    githubLink: "",
-    techStack: [],
-  },
-  {
-    title: "Project 4",
-    category: "Team",
-    liveDemoLink: "",
-    githubLink: "",
-    techStack: [""],
-  },
-  {
-    title: "Project 5",
-    category: "Solo",
-    liveDemoLink: "",
-    githubLink: "",
-    techStack: [],
-  },
-  {
-    title: "Project 6",
-    category: "Team",
-    liveDemoLink: "",
-    githubLink: "",
-    techStack: [],
-  },
+  // {
+  //   title: "Project 3",
+  //   category: "Solo",
+  //   liveDemoLink: "",
+  //   githubLink: "",
+  //   techStack: [],
+  // },
+  // {
+  //   title: "Project 4",
+  //   category: "Team",
+  //   liveDemoLink: "",
+  //   githubLink: "",
+  //   techStack: [""],
+  // },
+  // {
+  //   title: "Project 5",
+  //   category: "Solo",
+  //   liveDemoLink: "",
+  //   githubLink: "",
+  //   techStack: [],
+  // },
+  // {
+  //   title: "Project 6",
+  //   category: "Team",
+  //   liveDemoLink: "",
+  //   githubLink: "",
+  //   techStack: [],
+  // },
 ];
 export default function ProjectPage() {
   const soloProjects = projects.filter(

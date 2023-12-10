@@ -76,7 +76,9 @@ export default function Hero() {
         </motion.h1>
         <p className="text-gray-400">Software Developer</p>
         <Button
-          onClick={() => {router.push("/about")}}
+          onClick={() => {
+            router.push("/about");
+          }}
           label="About Me"
           icon={BsFillArrowRightCircleFill}
           black
@@ -98,9 +100,12 @@ export default function Hero() {
           onMouseLeave={textLeave}
           className="text-center md:text-left mr-5"
         >
-          Passionate Full Stack web developer with a Ph.D. in Mathematics,
-          merging analytical thinking and creative problem-solving to craft
-          captivating web solutions.
+          An Enthusiastic Data Scientist and skilled Full Stack Web Developer,
+          backed by a Ph.D. in Mathematics. Fueled by an unwavering dedication
+          to education and teaching, I seamlessly blend expertise in data
+          science and web development to drive innovation. Passionate about
+          leveraging my diverse skill set to both create technological solutions
+          and inspire others through education.
         </p>
       </div>
     </div>

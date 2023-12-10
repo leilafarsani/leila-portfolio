@@ -34,6 +34,20 @@ const card = [
     onClick: "https://www.typescriptlang.org/docs/",
   },
   {
+    image: "/python.svg",
+    ImgTitle: "python logo",
+    name: "Python",
+    description: "Versatile, readable programming language.",
+    onClick: "https://docs.python.org/3/",
+  },
+  {
+    image: "/Power-BI-Logo.png",
+    ImgTitle: "Power-BI logo",
+    name: "Power BI",
+    description: "Microsoft's business analytics tool for data visualization and insights.",
+    onClick: "https://learn.microsoft.com/en-us/power-bi/",
+  },
+  {
     image: "/react.png",
     ImgTitle: "react logo",
     name: "React",

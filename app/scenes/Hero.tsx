@@ -74,7 +74,7 @@ export default function Hero() {
           <br />
           FARSANI
         </motion.h1>
-        <p className="text-gray-400">Software Developer</p>
+        <p className="text-gray-400">A Lifelong Learner </p>
         <Button
           onClick={() => {
             router.push("/about");

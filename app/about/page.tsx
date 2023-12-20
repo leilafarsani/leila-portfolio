@@ -33,7 +33,7 @@ export default function AboutPage() {
         <div className="mb-12">
           <SectionCard
             title="Hobbies"
-            content={`Photography\nSolving puzzles\nPlaying the Tar instrument\nExploring Psychology and philosophy`}
+            content={`Dancing\nPhotography\nSolving puzzles\nPlaying the Tar instrument\nExploring Psychology and philosophy`}
           />
         </div>
 

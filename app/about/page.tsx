@@ -37,13 +37,13 @@ export default function AboutPage() {
           />
         </div>
 
-        {/* <Link
-          href="https://drive.google.com/file/d/1ezLWOoP32tMzuJ2Y1iOGiw6tMin_yyVU/view"
+        <Link
+          href="/Dr. Leila Farsani_CV.pdf"
           className=" px-6 py-3 rounded-md hover:bg-grey-700 transition duration-300 inline-flex items-center bg-gray-200 text-gray-600 font-semibold"
           target="_blank"
         >
           Download CV <FaDownload className="ml-3" />
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

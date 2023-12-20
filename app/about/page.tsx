@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="mb-12">
           <SectionCard
             title="Education"
-            content={`Full Stack Development and Data Science Bootcamp, CodeYourFuture, London, UK\nDoctorate in Mathematics, University of Sussex, Brighton, UK\nFirst Class Honours , Bachelor's Degree Accounting, Isfahan, Iran\nMathematics , First Class Honours Diploma , Isfahan, Iran`}
+            content={`Full Stack Development and Data Science Bootcamp, CodeYourFuture, London, UK\nDoctorate in Mathematics, University of Sussex, Brighton, UK\nFirst Class Honours , Bachelor's Degree Accounting, Isfahan, Iran\nFirst Class Honours Diploma, Mathematics , Isfahan, Iran`}
           />
         </div>
 

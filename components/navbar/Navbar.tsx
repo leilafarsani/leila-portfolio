@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 z-30 w-full border-b"
+      className="sticky top-0 z-30 w-full border-b bg-gray-100"
     >
       <div className="flex items-center justify-between px-6 py-6 cursor-default">
         <Link className="uppercase text-[1.5rem] z-50 ml-4" href="/">

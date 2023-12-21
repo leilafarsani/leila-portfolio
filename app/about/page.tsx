@@ -20,14 +20,14 @@ export default function AboutPage() {
         <div className="mb-12">
           <SectionCard
             title="Education"
-            content={`Full Stack Development and Data Science Bootcamp, CodeYourFuture, London, UK\nDoctorate in Mathematics, University of Sussex, Brighton, UK\nFirst Class Honours , Bachelor's Degree Accounting, Isfahan, Iran\nFirst Class Honours, Diploma Mathematics , Isfahan, Iran`}
+            content={`Full Stack Development and Data Science Bootcamp, CodeYourFuture, London, UK\nDoctorate in Mathematics, University of Sussex, Brighton, UK\nFirst Class Honours , Bachelor's Degree Accounting, Isfahan, Iran\nFirst Class Honours, Diploma Mathematics, Isfahan, Iran`}
           />
         </div>
 
         <div className="mb-12">
           <SectionCard
             title="Experience"
-            content={`Data Scientist, WeFindFlats, London, UK\nTech Volunteering, CodeYourFuture, London\nMathematics Teaching, Private Lessons, Hybrid\nExamination Reader, Scribe, and Invigilator, University of Sussex, Brighton\nAssociate Tutor, University of Sussex, Brighton\n Accounting Associate, Private sector`}
+            content={`Data Scientist, WeFindFlats, London, UK\nTech Volunteering, CodeYourFuture, London\nMathematics Teaching, Private Lessons, Hybrid\nExamination Reader, Scribe, and Invigilator, University of Sussex, Brighton\nAssociate Tutor, University of Sussex, Brighton\n Accounting Associate, Private sector, Isfahan, Iran`}
           />
         </div>
         <div className="mb-12">

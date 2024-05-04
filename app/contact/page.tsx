@@ -33,7 +33,7 @@ export default function ContactPage() {
 
         <div className="flex justify-center space-x-6 mt-6">
           <Link
-            href="https://bit.ly/3YwlJma"
+            href="https://www.linkedin.com/in/leila-farsani-9966593b/"
             className="text-gray-400 hover:text-blue-500 transition duration-300"
             target="_blank"
             rel="noopener noreferrer"
